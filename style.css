@@ -346,8 +346,8 @@ audio {
     .wish-box input,
     .wish-box textarea,
     .wish-box button {
-        width: 350px;
-        max-width: 350px;
+        width: 50%;
+        max-width: 500px;
         box-sizing: border-box;
         margin: 0.5rem auto;
     }
