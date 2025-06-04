@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY BIRTHDAY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<audio id="bgm" muted autoplay loop preload="auto">
+    <source src="./audio/ChucMungSinhNhat-PhanDinhTung-2804028.mp3" type="audio/mpeg">
+</audio>
+<header>
+    <div class="header-container">
+        <h1>ĐINH THỊ THẢO TRANG</h1>
+        <div class="nen-button-wrapper">
+            <button id="nenBtn">🎂</button>
+            <div class="nen-label">
+                <p>Mừng Cam Tuổi Mới🎈🎁</p>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="fade-in">
+        <h2>Một ngày đặc biệt để yêu thương<br>Chúc mừng sinh nhật bé yêu 💖</h2>
+        <div class="families">
+            <div class="family">
+                <h3>Ba Mẹ Bé</h3>
+                <p>Bố: Đinh TRỌNG HUÂN<br>Mẹ: VŨ THỊ HỒNG NGỌC</p>
+                <img src="./image/9.jpg" alt="Ba mẹ bé">
+            </div>
+            <div class="family">
+                <h3>Bé THẢO TRANG</h3>
+                <p><strong>Chủ nhân bữa tiệc 🎂</strong></p>
+                <p>Ngày sinh: 10.06.2025</p>
+                <img src="./image/10.jpg" alt="Bé Bảo Ngọc">
+            </div>
+        </div>
+    </section>
+    <section class="invitation fade-in">
+        <h2>Thiệp Mời Sinh Nhật</h2>
+        <p>CHÚC MỪNG SINH NHẬT<br><strong>Bé CAM 🎉</strong></p>
+
+        <div class="photos">
+            <img src="./image/1.jpg" alt="Ảnh sinh nhật 1">
+            <img src="./image/3.jpg" alt="Ảnh sinh nhật 2">
+            <img src="./image/4.jpg" alt="Ảnh sinh nhật 3">
+        </div>
+    </section>
+
+    <section class="event-box fade-in">
+        <h2>THỜI GIAN & ĐỊA ĐIỂM</h2>
+        <p>Tại: Nhà của CAM </p>
+        <p>Thứ ba, ngày 10.06.2025 - Lúc 20:00</p>
+    </section>
+
+    <section class="calendar fade-in">
+        <h2>Lịch Tháng 6/2025</h2>
+        <table>
+            <tr>
+                <th>CN</th>
+                <th>T2</th>
+                <th>T3</th>
+                <th>T4</th>
+                <th>T5</th>
+                <th>T6</th>
+                <th>T7</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td class="highlight">10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+            </tr>
+            <tr>
+
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+            </tr>
+            <tr>
+
+                <td>29</td>
+                <td>30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="album fade-in">
+        <div style="width: 100%; text-align: center; margin-bottom: 1.5rem;">
+            <h2>Cùng Nhìn Lại Cam Một Năm Đã Làm Gì Nhé!!!</h2>
+        </div>
+        <img src="./image/5.jpg" alt="Ảnh bé 1">
+        <img src="./image/6.jpg" alt="Ảnh bé 2">
+        <img src="./image/7.jpg" alt="Ảnh bé 3">
+    </section>
+
+
+
+    <section class="wish-box-container">
+        <div class="wish-box">
+            <h2>💌 Gửi lời chúc đến CAM</h2>
+            <form id="wishForm">
+                <input type="text" name="name" placeholder="Tên của bạn" required>
+                <textarea name="message" placeholder="Lời chúc của bạn..." required></textarea>
+                <button type="submit">Gửi lời chúc 🎉</button>
+                <p id="wishMessage"></p>
+            </form>
+        </div>
+    </section>
+    <section class="fade-in thanks">
+        <h2>Lời cảm ơn</h2>
+        <p>Sự hiện diện của bạn là niềm vui lớn trong ngày đặc biệt của bé CAM.<br>Chúng tôi xin chân thành cảm ơn!</p>
+    </section>
+
+    <footer>
+        © 2025 Gia Đình Bé CAM | Hân hạnh đón tiếp bạn!
+    </footer>
+</main>
+
+<script src="main.js"></script>
+
+<body>
+
+</body>
+
+</html>

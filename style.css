@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: #f8436a;
+    color: #fff8f0;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #fda541;
+    letter-spacing: 3.5px;
+    font-weight: bold;
+    font-size: 3rem;
+
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    /* giữ tỷ lệ và cắt nếu cần */
+    border-radius: 10px;
+    /* object-position: 0 85%; */
+    overflow: hidden;
+    /* bo góc nếu muốn */
+    object-position: center top;
+}
+
+section {
+    padding: 3rem 1rem;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+/* ===============================header=================================== */
+header {
+    background: url('image/11.jpg') center 80%/ cover no-repeat;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 8px #000;
+}
+
+.header-container {
+    margin-top: 18rem;
+}
+
+.nen-button-wrapper {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#nenBtn {
+    font-size: 3rem;
+    background: none;
+    text-shadow: 2px 2px 5px #000;
+    cursor: pointer;
+    animation: pulse 1.5s infinite;
+}
+
+.nen-label {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: #fda541;
+    font-weight: bold;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.nen {
+    position: absolute;
+    font-size: 3.5rem;
+    animation: fall 2.5s linear forwards;
+    pointer-events: none;
+    color: red;
+}
+
+@keyframes fall {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-500px) scale(0.5);
+    }
+}
+
+/* ==================================お祝いのボックスを設定する====================================== */
+.wish-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wish-box {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: solid 2px white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    max-width: 700px;
+    text-align: center;
+    justify-items: center;
+}
+
+#wishForm {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.wish-box h2 {
+    color: #fad920;
+    font-family: 'Dancing Script', cursive;
+}
+
+.wish-box input,
+.wish-box textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    width: 600px;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+.wish-box button {
+    width: 600px;
+    max-width: 600px;
+    background: #ffffff;
+    color: #fad920;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.wish-box button:hover {
+    background: #c92a3c;
+}
+
+#wishMessage {
+    margin-top: 1rem;
+    font-style: italic;
+    color: green;
+}
+
+.families {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.family {
+    width: 45%;
+    background: #fff4f4;
+    color: #333;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.photos,
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.photos img,
+.album img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.event-box {
+    background: #fff4f4;
+    color: #222;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+}
+
+.calendar {
+    margin: 2rem auto;
+    max-width: 400px;
+    background: #fff4f4;
+    color: #222;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar td,
+.calendar th {
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+.highlight {
+    background: #ffc1c1;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.thanks {
+    background: url('./image/8.jpg') center 30% / cover no-repeat;
+    color: #fad920;
+    text-shadow: 0 0 5px #000;
+    border-radius: 10px;
+    height: 145vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #ffe2e2;
+}
+
+audio {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        background-position: center 85%;
+        height: 100vh;
+        padding: 0 1rem;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .thanks {
+        padding: 3rem 1.5rem;
+    }
+
+    .family {
+        width: 100%;
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    .photos img,
+    .album img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .invitation h2,
+    .event-box h2,
+    .calendar h2,
+    .thanks h2 {
+        font-size: 1.8rem;
+    }
+
+    .invitation p,
+    .event-box p,
+    .thanks p {
+        font-size: 1.2rem;
+        padding: 0 0.5rem;
+    }
+
+    .calendar {
+        max-width: 100%;
+    }
+
+    .wish-box {
+        max-width: 90vw;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+    .wish-box input,
+    .wish-box textarea,
+    .wish-box button {
+        width: 350px;
+        max-width: 350px;
+        box-sizing: border-box;
+        margin: 0.5rem auto;
+    }
+
+    #nenBtn {
+        font-size: 2.5rem;
+    }
+
+    .nen-label {
+        font-size: 1.4rem;
+    }
+
+    img {
+        object-position: 0 30%;
+    }
+
+}
+
+#nenBtn {
+    color: #f6f2f2;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        background-position: center 85%;
+        height: 100vh;
+        padding: 0 2rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        line-height: 1.5;
+    }
+
+    .family {
+        width: 48%;
+        margin: 1rem 0;
+        padding: 1.5rem;
+    }
+
+    .photos img,
+    .album img {
+        max-width: 48%;
+        height: auto;
+    }
+
+    .invitation h2,
+    .event-box h2,
+    .calendar h2,
+    .thanks h2 {
+        font-size: 2.2rem;
+    }
+
+    .invitation p,
+    .event-box p,
+    .thanks p {
+        font-size: 1.4rem;
+    }
+
+    .wish-box {
+        max-width: 600px;
+        padding: 1.5rem;
+        margin: 0 auto;
+
+    }
+
+    .wish-box input,
+    .wish-box textarea,
+    .wish-box button {
+        width: 90%;
+        max-width: 90%;
+        box-sizing: border-box;
+        margin: 0.5rem auto;
+    }
+
+    #nenBtn {
+        font-size: 3rem;
+    }
+
+    .nen-label {
+        font-size: 1.6rem;
+    }
+
+    .calendar {
+        max-width: 90%;
+    }
+
+    img {
+        object-position: 0 30%;
+    }
+}
