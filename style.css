@@ -20,6 +20,8 @@ h1 {
 
 }
 
+
+
 .fade-in {
     opacity: 0;
     transform: translateY(50px);
@@ -216,6 +218,29 @@ header {
     justify-content: center;
     gap: 1rem;
     margin-top: 2rem;
+}
+
+.album h3 {
+    width: 100%;
+    font-size: 1.4rem;
+}
+
+.album .title::after {
+    content: "";
+    display: block;
+    width: 136px;
+    height: 2px;
+    background: #2e80ce;
+    margin: 18px auto 0;
+}
+
+.album .title::before {
+    content: "";
+    display: block;
+    width: 136px;
+    height: 2px;
+    background: #2e80ce;
+    margin: 18px auto 18px;
 }
 
 .photos img,
